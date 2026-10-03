@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('project_id')->constrained('projects');
             $table->string('name');
+            $table->integer('priority')->nullable();
             $table->timestamps();
         });
     }
